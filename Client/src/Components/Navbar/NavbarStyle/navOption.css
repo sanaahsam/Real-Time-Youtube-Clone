@@ -1,0 +1,45 @@
+.nav-option{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    height: inherit;
+    justify-content: space-evenly;
+    background-color: transparent;
+}
+.nav-option a{
+    text-decoration: none;
+    color: white;
+}
+.nav-option .icon{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.user-icon{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    cursor: pointer;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    background-color: tomato;
+}
+
+.signin-btn{
+    display: flex;
+            width: 100px;
+            color: #3EA6FF;
+            align-items: center;
+            border: 2px solid #3C3C3C;
+           border-radius : 50px;
+            margin-top: 15px;
+            height: 40px;
+            justify-content: center;
+}
+
+.signin-btn:hover{
+    border: none;
+    background-color: #263850;
+}

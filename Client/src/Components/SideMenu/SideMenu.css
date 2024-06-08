@@ -1,0 +1,82 @@
+.sideMenu{
+    position: absolute;
+    top: 60px;
+    right: 50px;
+    overflow-y: auto;
+    background-color: #282828;
+    height: 650px;
+    color: white;
+    
+    width: 290px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.sideMenu a{
+    text-decoration: none;
+    color: #3EA6FF;
+}
+.sidemenu-container1{
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.sidemenu-container1 .user-icon{
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.sidemenu-container1 .user-info p{
+  
+    margin-bottom: 3px;
+}
+
+.sidemenu-container1 .user-info span{
+    color: #3EA6FF;
+    cursor: pointer;
+  
+}
+
+.sidemenu-container1 img{
+    margin-left: 10px;
+}
+
+.sidemenu-container1 .user-info{
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+
+.sidemenu-container{
+    padding-top:5px ;
+    display: flex;
+    width: inherit;
+    border-top: 1px solid #535353;
+    flex-direction: column;
+    padding-bottom: 5px;
+    background-color: transparent;
+}
+
+.sidemenu-subcontainer{
+    display: flex;
+    cursor: pointer;
+    padding-left: 15px;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    background-color:transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.sidemenu-subcontainer:hover{
+    background-color: #3E3E3E;
+}
+
+.sidemenu-subcontainer p{
+    margin-left: 20px;
+    letter-spacing: 0.02rem;
+}

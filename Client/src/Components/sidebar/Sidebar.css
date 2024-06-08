@@ -1,0 +1,42 @@
+.sidebar{
+    width: 75px;
+    height: 91vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    align-items: center;
+    background-color: #0F0F0F;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.shorts
+{
+    width: 25px;
+}
+
+.sidebar-subcontainer{
+    width: 90%;
+    display: flex;
+    padding-top: 10px;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: transparent;
+    height: 70px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.sidebar-subcontainer:hover{
+    background-color: #272727;
+
+}
+
+.sidebar-subcontainer p{
+    font-size: 0.8rem;
+    margin-top: 8px;
+}

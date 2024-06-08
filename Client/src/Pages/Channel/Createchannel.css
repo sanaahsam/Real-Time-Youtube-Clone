@@ -1,0 +1,96 @@
+.createchannel-container{
+    position:absolute;
+    top: 15%;
+    left: 30%;
+    height: 550px;
+    border-radius: 15px;
+    width: 680px;
+    background-color: #212121;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.createchannel-container p{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: white;
+    margin-left: 20px;
+}
+
+
+.createchannel-subcontainer img{
+    width: 130px;
+    margin-top: 50px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+#image-upload{
+    display: none;
+}
+
+.createchannel-subcontainer{
+    width: 70%;
+    height: 80%;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+}
+.select-label{
+    margin-bottom: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #3EA6FF;
+    margin-top: 20px;
+}
+.createchannel-subcontainer input{
+    width: 98%;
+    margin-top: 15px;
+   height: 50px;
+   color: white;
+   padding-left: 20px;
+  font-size: 1rem;
+  background-color: transparent;
+   border: 2px solid #4D4D4D;
+   border-radius: 10px;
+
+}
+
+.createchannel-subcontainer p{
+    font-size: 0.6rem;
+    margin-top: 25px;
+    letter-spacing: 0.01rem;
+    line-height: 1rem;
+    width: 100%;
+
+}
+
+.createchannel-subcontainer span{
+    color: #3A96E4;
+}
+
+.createchannel-container .btns {
+    width: 200px;
+    display: flex;
+    
+    align-items: center;
+    color: white;
+  height: 30px;
+  margin-left: 68%;
+  margin-top: 10px;
+    font-weight: bold;
+    justify-content: space-between;
+}
+.btns p{
+    font-size: 1rem;
+    cursor: pointer;
+}
+.btns .create-btn{
+    color: #3A96E4;
+
+}

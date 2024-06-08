@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+.logo{
+    width: 165px;
+    height: inherit;
+    
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    background-color: transparent;
+}
+
+
+
+.logo p{
+    font-family: "Oswald", sans-serif;
+    color: white;
+    
+    font-size: 1.3rem;
+
+}
+
+
+.youtube-icon{
+    width: 30px;
+    height: 30px;
+}

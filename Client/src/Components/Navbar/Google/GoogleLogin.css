@@ -1,0 +1,16 @@
+.login{
+    width: 90px;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: transparent;
+    color:  #3EA6FF;
+    display:  flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid  #3F3F3F;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}

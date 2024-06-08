@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+.layout{
+    display: flex;
+    
+}
+.layout a{
+    text-decoration: none;
+}
+.home a{
+    text-decoration: none;
+}
+.home-container{
+    width: 100%;
+    height: 85vh;
+    overflow-y:auto ;
+}
+.home{
+    width: inherit;
+    height: 80vh;
+    padding-top: 10px;
+    background-color: #0F0F0F;
+    overflow-y:auto ;
+    display: flex;
+    flex-wrap: wrap;
+}

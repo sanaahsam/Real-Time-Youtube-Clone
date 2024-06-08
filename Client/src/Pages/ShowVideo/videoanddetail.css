@@ -1,0 +1,213 @@
+.openvideo-container{
+    display: flex;
+    width: 950px;
+    padding-top: 15px;
+    color: white;
+    flex-direction: column;
+}
+
+
+
+.openvideo-container .video-title{
+       font-size: 1.9rem;
+       font-weight: bold;
+       margin-top: 10px;
+}
+
+.openvideo-controls{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5px;
+    align-items: center;
+    height: 60px;
+}
+
+.openvideo-controls img{
+    width: 40px;
+    margin-right: 10px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.creator{
+       display: flex;
+    align-items: center;
+    width: 220px;
+    height: 100%;
+}
+.cretor-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.cretor-info .creator-name{
+    font-weight: bold;
+    
+    margin-bottom: 3px;
+    font-size: 1rem;
+}
+
+.cretor-info .subcribers{
+    white-space: nowrap;
+    color: #AAAAAA;
+    font-size: 0.9rem;
+}
+
+.subscribe-btn{
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    height: 40px;
+    margin-left: 50px;
+    background-color: #1A1A1A;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    border-radius: 20px;
+}
+
+.subscribe-btn:hover{
+    background-color: #333333;
+}
+
+.like-dislike-btns{
+    width: 150px;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 100%;
+    cursor: pointer;
+    font-size: 0.8rem;
+  
+}
+
+.like-btn{
+    width: 85px;
+    background-color: #1A1A1A;;
+    border-top-left-radius: 20px;
+    border-right: 1.5px solid #484848;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 20px;
+
+}
+
+.like-btn:hover{
+    
+        background-color: #333333;
+
+}
+
+.dislike-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    
+    background-color: #1A1A1A;
+    border-top-right-radius: 20px;
+    
+    border-bottom-right-radius: 20px;
+}
+
+.dislike-btn:hover{
+    background-color: #333333;
+}
+
+.share-btn{
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    height: 40px;
+    margin-left: 20px;
+    background-color: #1A1A1A;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    border-radius: 20px;
+}
+
+.share-btn:hover{
+    background-color: #333333;
+}
+
+.download-btn{
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    height: 40px;
+    margin-left: 10px;
+    background-color: #1A1A1A;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    border-radius: 20px;
+}
+.download-btn:hover{
+    background-color: #333333;
+}
+.dot-btn{
+    width: 40px;
+    border-radius: 50%;
+    height: 40px;
+    margin-left: 10px;
+    background-color: #1A1A1A;
+     display: flex;
+     margin-right: 8px;
+     align-items: center;
+     justify-content: center;
+    
+}
+
+.dot-btn:hover{
+    background-color: #333333;
+}
+
+.controls-container{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    
+
+}
+
+.controls-container2{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.description-container{
+    width: 98%;
+    padding: 10px;
+    margin: 0 auto;
+    color: white;
+    background-color:#1A1A1A;    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.view-time{
+    display: flex;
+    font-weight: bold;
+
+}
+
+.view-time p{
+   font-size: 1rem;
+   margin-right: 20px;
+}
+
+.description-subcontainer p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.03rem;
+}
+
+.toggle-button{
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 5px;
+    font-weight: bold;
+}

@@ -1,0 +1,114 @@
+.channel-container{
+    background-color: transparent;
+    width: 90%;
+    border-bottom: 1.5px solid #3F3F3F;
+    height: 292px;
+}
+
+.channel-subcontainer{
+    
+    padding-left: 70px;
+    height: 250px;
+    display: flex;
+    padding-top: 20px;
+}
+
+.channel-subcontainer img{
+    height: 200px;
+    margin-right: 25px;
+    width: 200px;
+    border-radius: 50%;
+}
+.more-btn{
+    cursor: pointer;
+    color: #AAAAAA;
+    display: flex;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.more-btn p{
+    margin-right: 15px;
+}
+
+.more-btn:hover{
+    color: white;
+}
+
+.channel-info{
+ 
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.channel-info h1{
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 15px;
+
+}
+
+.handle{
+    color: #AAAAAA;
+}
+.channel-btns {
+    display: flex;
+    width: 600px;
+    margin-top: 10px;
+    height: 50px;
+}
+.channel-btns div{
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+    background-color: #272727;
+    height: 35px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 0.9rem;
+    color: #AAAAAA;
+    font-weight: bold;
+    cursor: pointer; 
+    margin-right: 15px;
+    
+}
+
+.channel-btns div:hover{
+    background-color: #3F3F3F;
+    color: white;
+    
+}
+
+.home-playlist-btns{
+    display: flex;
+    margin-left: 70px;
+}
+
+.home-playlist-btns div{
+    height: 40px;
+
+    
+    margin-right: 25px;
+    padding-left: 10px;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.home-playlist-btns div p {
+    letter-spacing: 0.02rem;
+    font-weight: bold;
+    color: #AAAAAA;
+    font-size: 1rem;
+}
+
+.home-playlist-btns div:hover{
+    border-bottom: 3.5px solid white;
+   
+}
+
+.home-playlist-btns div p:hover{
+    color: white;
+}

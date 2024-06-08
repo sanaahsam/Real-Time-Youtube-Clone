@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+.createRoom-container{
+    width: 600px;
+    height: 500px;
+    position: absolute;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+   background-color: #FFFFFF;
+    left: 30%;
+}
+
+.createRoom-container p{
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+    width: 570px;
+    margin-top: 5px;
+   
+    font-size: 1.3rem;
+  
+}
+
+.createRoom-subcontainer{
+    width: 380px;
+    background-size: contain;
+    background-image: url(../../../public/picture/social_distancing_Mesa_de_trabajo_1.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    
+}
+
+.createRoom-subcontainer button{
+    width: 140px;
+    margin-top: 270px;
+    font-family: "Roboto", sans-serif;
+    color:white;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #404171;
+    border:none;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 35px;
+}
+
+.createRoom-container .cancel-btn{
+    margin-left: 550px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

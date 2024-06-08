@@ -1,0 +1,101 @@
+/*.suggestion-wrapper{
+    display: flex;
+    
+    padding-top: 5px;
+    padding-bottom: 5px;
+   overflow-x: auto;
+    background-color: turquoise;
+}
+
+.suggestion{
+
+}
+*/
+
+.suggestion-wrapper {
+   display: flex;
+   align-items: center;
+    color: white;
+    
+  }
+  
+  .suggestion-container {
+    display: flex;
+    width: 93%;
+    height: 50px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow-x: hidden;
+   
+  }
+  
+  .suggestions {
+    display: flex;
+   
+    
+    
+  }
+  
+  .suggestion {
+    
+    color:white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 5px;
+     margin-left: 10px;
+     font-weight: bold;
+     cursor: pointer;
+     margin-right: 5px;
+     background-color: #272727;;
+    white-space: nowrap;
+  }
+
+   .suggestion:hover{
+    background-color: #3F3F3F;
+   }
+  
+  .scroll-btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .scroll-btn-left {
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+           
+           display: flex;
+            color: white;
+  }
+  
+  .scroll-btn-right {
+    margin-left: 10px;
+   
+            display: flex;
+            align-items: center;
+            color: white;
+            justify-content: center;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+          
+  }
+  .scroll-btn-left:hover{
+    background-color: #3F3F3F ;
+  }
+
+  .scroll-btn-right:hover{
+    background-color: #3F3F3F ;
+  }

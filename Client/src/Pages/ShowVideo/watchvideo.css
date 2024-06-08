@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+    
+
+.watchvideo-container{
+    padding-left: 100px;
+    padding-right: 30px;
+    font-family: "Roboto", sans-serif;
+    background-color: #0F0F0F;
+    margin: 0 auto;
+    display: flex;
+}
+
+.watchvideo-subcontainer{
+    display: flex;
+    flex-direction: column;
+    width: 950px;
+    
+}
+
+.watchvideo-subcontainer2{
+    width: 420px;
+    padding-top: 15px;
+    padding-left: 10px;
+    
+}
+
+.watchvideo-subcontainer2 video{
+    width: 200px;
+    margin-right: 10px;
+}
+
+.watchvideo-subcontainer2 .video-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.watchvideo-subcontainer2 img{
+    display: none;
+}
+
+.watchvideo-subcontainer2 .video-info{
+
+    width: 195px;
+    height: 100px;
+}
+
+.watchvideo-subcontainer2 .video-info a{
+    text-decoration: none;
+
+}
+
+.watchvideo-subcontainer2 .video-info .title{
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.watchvideo-subcontainer2 .video-info p{
+    margin-top: 5px;
+    font-size: 0.8rem;
+}
+
+.watchvideo-subcontainer2 .video-info .ChannelName{
+    font-size: 0.9rem;
+}
+
+.watchvideo-subcontainer2 .video-container{
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.watchvideo-subcontainer2  a{
+    text-decoration: none;
+}

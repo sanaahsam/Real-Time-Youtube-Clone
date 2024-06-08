@@ -1,0 +1,21 @@
+.hamburger{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 9px;
+    cursor: pointer;
+    margin-right: 15px;
+    background-color: transparent;
+    justify-content: space-evenly;
+}
+
+.hamburger:hover{
+    background-color: #272727;
+}
+
+.hamburger .line{
+    border: 1.3px solid #C3C3C3;
+
+}

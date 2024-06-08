@@ -1,0 +1,6 @@
+/node_modules
+/.env
+/public
+# Ignore large video files
+*.mp4
+/backend/public/1714809327114some.mp4

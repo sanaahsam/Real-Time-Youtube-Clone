@@ -1,0 +1,62 @@
+.video-player{
+    width: 950px;
+    height : 540px;
+    position: relative;
+    background-color: black;
+    border-radius: 20px;
+    z-index: 1;
+  }
+  
+  .video-player video{
+    width: 950px;
+    
+    height : 540px;
+  border-radius: 20px;
+  }
+  
+  .video-player .play-pause{
+    width: 250px;
+    height: 190px;
+    position: absolute;
+    top:35%;
+    
+    cursor: pointer;
+    left: 40%;
+     background-color:transparent;
+  }
+  
+  .video-player .right-div{
+    
+    width: 260px;
+    
+    top:24%;
+    
+    height: 350px;
+    position: absolute;
+    left: 70%;
+    cursor: pointer;
+    background-color:transparent;
+  }
+  
+  .video-player .left-div{
+    width: 260px;
+    top:15%;
+    position: absolute;
+    cursor: pointer;
+    left: 5%;
+    
+    height: 380px;
+    background-color:transparent ;
+  }
+  
+  .video-player .top-right{
+    width: 130px;
+    
+    height: 100px;
+    position:absolute;
+   top:1%;
+   cursor: pointer;
+   left: 85%;
+    background-color:transparent ;
+  }
+  

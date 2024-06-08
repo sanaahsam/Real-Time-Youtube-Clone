@@ -1,0 +1,112 @@
+.createChannel-container{
+    width: 650px;
+    background-color: #212121;
+    height: 520px;
+    top: 20%;
+    padding: 20px;
+    border-radius: 10px;
+    left: 30%;
+    position: absolute;
+    
+}
+
+.createChannel-container h2{
+    color: white;
+}
+
+
+.createChannel-sub_container{
+    width: 80%;
+    display: flex;
+    margin-left: 10%;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    height: 85%;
+}
+
+
+.createChannel-sub_container img{
+     width: 110px;
+     height: 110px;
+     margin-top: 50px;
+     border-radius: 50%;
+}
+
+.createChannel-sub_container .pic-input-label{
+    color:  #3EA6FF;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.createChannel-sub_container .pic-input{
+    display: none;
+}
+
+.createChannel-sub_container .inputs{
+    width: 90%;
+    margin-bottom: 15px;
+    background-color: #212121;
+    color: white;
+   
+    font-size: 1rem;
+    padding-top: 20px;
+    height: 55px;
+    
+    border: 2px solid #4D4D4D;
+    border-radius: 10px;
+}
+
+.label-name{
+    font-size: 0.7rem;
+    position: absolute;
+    top: 53%;
+    left: 18%;
+    color: #696969;
+}
+
+.label-handle{
+    font-size: 0.7rem;
+    position: absolute;
+    top: 66%;
+    left: 18%;
+    color: #696969;
+}
+
+.label-at{
+    font-size: 1rem;
+    position: absolute;
+    top: 70%;
+    left: 17.7%;
+    color: #696969;
+}
+
+.createChannel-sub_container p{
+    font-size: 0.6rem;
+    color: white;
+    margin-top: 10px;
+    
+   
+}
+
+.createChannel-sub_container span{
+    color: #3EA6FF;
+    font-weight: bold;
+}
+
+
+
+.createChannel-btns{
+    width: 200px;
+    margin-left: 67%;
+    margin-top: 8px;
+    background-color: transparent;
+    display: flex;
+    cursor: pointer;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+}

@@ -1,0 +1,78 @@
+.cmtsection-container{
+    width: 950px;
+    color: white;
+    padding-top: 20px;
+}
+
+.total-cmt{
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.add-cmt{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-direction: column;
+
+}
+
+.add-cmt img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+
+.add-cmt input{
+    border-bottom: 2px solid #3F3F3F;
+    background-color: transparent;
+    border-left: none;
+    color: white;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    border-right: none;
+    border-top: none;
+    width: 91%;
+    
+}
+
+.addcmt-subcontainer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.addcmt-btn{
+    width: 180px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 80%;
+    justify-content: space-between;
+    margin-right: 10px;
+   
+}
+
+.addcmt-btn div{
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    border-radius: 25px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cmtsection-subcontainer{
+    display: flex;
+    flex-direction: column;
+}
+.okadd{
+    color: black;
+    background-color:#3EA6FF;
+}
+.cancel:hover{
+   background-color: #3F3F3F;
+}
