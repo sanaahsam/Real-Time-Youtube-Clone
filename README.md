@@ -74,14 +74,15 @@ Make sure you have the following installed on your system:
    PORT = your_port
    ORIGIN=your_frontend_port
 
-5. Running the Application
+ <h1>Running the Application</h1>
 
-    Start the backend server:
+7. Start the backend server:
 
-    cd Server
+     ```bash
+     cd Server
+     npm start
+
+6. Start the frontend development server:
+    ```bash
+    cd ../Client
     npm start
-
-   Start the frontend development server:
-
-   cd ../Client
-   npm start
