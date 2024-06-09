@@ -1,7 +1,7 @@
 import Playlist from "../Models/PlaylistModel.js";
 import { Users } from "../Models/UserModels.js";
 import Video from "../Models/VideoModel.js";
-import { io } from "../server.js";
+import { io } from "../index.js";
 
 const likes = async (req, res) => {
   const videoId = req.params.id;

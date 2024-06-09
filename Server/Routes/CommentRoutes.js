@@ -3,7 +3,7 @@ import Comments from "../Models/CommentModel.js";
 import Video from "../Models/VideoModel.js";
 import mongoose from "mongoose";
 import { Users } from "../Models/UserModels.js";
-import { io } from "../server.js";
+import { io } from "../index.js";
 
 const CmtRoute = express.Router();
 
