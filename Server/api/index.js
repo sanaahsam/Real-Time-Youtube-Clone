@@ -19,6 +19,22 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const app = express();
+
+const whitelist = ["https://real-time-youtube-clone.vercel.app"];
+
+app.use((req, res, next) => {
+  const origin = req.get("origin");
+  const isWhitelisted = whitelist.includes(origin);
+  if (isWhitelisted) {
+    res.setHeader("Access-Control-Allow-Origin", origin);
+    res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS, PUT, PATCH, DELETE");
+    res.setHeader("Access-Control-Allow-Headers", "X-Requested-With,Content-Type,Authorization");
+    res.setHeader("Access-Control-Allow-Credentials", true);
+  }
+  if (req.method === "OPTIONS") res.sendStatus(200);
+  else next();
+});
+
 app.use(express.json());
 app.use(cors());
 app.use("/public", express.static(path.join(__dirname, "public")));
@@ -68,8 +84,10 @@ io.on("connection", (socket) => {
   });
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = 5000;
 server.listen(PORT, () => {
   connect();
   console.log(`Server is listening on port ${PORT}`);
 });
+
+export default app;
