@@ -10,6 +10,7 @@ import AllHistoryLayout from "./Pages/History/AllHistoryLayout";
 import YourvideoLayout from "./Pages/YourVideo/YourvideoLayour";
 import Room from "./Components/CreateRoomBox/Room";
 import SearchLayout from "./Pages/SearchPage/SearchPageLayout";
+import WatchLaterLayout from "./Pages/WatchLaterPage/WatchLaterLayout";
 
 function AllRoutes() {
   const { User } = useContext(UserContext);
