@@ -95,7 +95,9 @@ function DrawerSidebar() {
             )}
             <div className="container-you">
               <BsClock size={25} />
-              <p>Watch Later</p>
+              <Link to={`/watchLater/${user}`}>
+                <p>Watch Later</p>
+              </Link>
             </div>
             <div className="container-you">
               <BiLike size={25} />

@@ -16,7 +16,7 @@ function NavOption() {
   const { showMenu, setShowMenu, setUploadBox, SetRoomBox } =
     useContext(DrawerContext);
   const { User } = useContext(UserContext);
-
+  const ischannel = User ? User.ischannel : "";
   const isMenu = () => {
     setShowMenu((prev) => !prev);
   };
@@ -33,9 +33,11 @@ function NavOption() {
     <div className="nav-option">
       {User && (
         <>
-          <div className="icon" onClick={uploadbox}>
-            <RiVideoAddLine size={20} />
-          </div>
+          {User && ischannel && (
+            <div className="icon" onClick={uploadbox}>
+              <RiVideoAddLine size={20} />
+            </div>
+          )}
           <div className="icon">
             <FaRegBell size={20} />
           </div>

@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import "../ShowVideo/videoanddetail.css";
-import { PiShareFatLight } from "react-icons/pi";
+import { BsClock } from "react-icons/bs";
 import { BiSolidLike } from "react-icons/bi";
 import { LiaDownloadSolid } from "react-icons/lia";
 import { BsThreeDots } from "react-icons/bs";
@@ -88,8 +88,34 @@ function VideoandDetail() {
       if (res.ok) {
         console.log("suscessfull");
         SetWord("Subscribed");
+
         localStorage.setItem("YoutubeUser", JSON.stringify(data));
-        dispatch({ type: "LOGIN", payload: JSON.parse(data) });
+
+        dispatch({ type: "LOGIN", payload: data });
+      } else {
+        console.log(data.message);
+      }
+    } catch (err) {
+      console.error("Failed to dislike the video:", err);
+    }
+  };
+
+  const handleWatchLater = async () => {
+    try {
+      const res = await fetch(
+        `http://localhost:5000/Youtube/addwatchlater/${id}`,
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ userId }),
+        }
+      );
+
+      const data = await res.json();
+      if (res.ok) {
+        console.log(data);
       } else {
         console.log(data.message);
       }
@@ -142,9 +168,9 @@ function VideoandDetail() {
               </p>
             </div>
           </div>
-          <div className="share-btn">
-            <PiShareFatLight size={20} />
-            <p style={{ marginLeft: "10px" }}>Share</p>
+          <div className="share-btn" onClick={handleWatchLater}>
+            <BsClock size={20} />
+            <p style={{ marginLeft: "10px" }}>Watch Later</p>
           </div>
           <div className="download-btn">
             <LiaDownloadSolid size={20} />
