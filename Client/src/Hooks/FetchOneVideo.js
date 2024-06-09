@@ -16,7 +16,7 @@ function useFetchOneVideo() {
     const fetchOne = async () => {
       try {
         const res = await fetch(
-          `hhttps://mernclone-6an5.onrender.com/Youtube/watch/${id}`,
+          `https://mernclone-6an5.onrender.com/Youtube/watch/${id}`,
           {
             method: "GET",
             headers: {
