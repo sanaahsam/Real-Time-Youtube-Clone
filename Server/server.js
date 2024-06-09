@@ -73,3 +73,5 @@ server.listen(PORT, () => {
   connect();
   console.log(`Server is listening on port ${PORT}`);
 });
+
+export { io };
