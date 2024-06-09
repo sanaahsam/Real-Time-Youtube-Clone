@@ -57,6 +57,7 @@ const connect = async () => {
         useUnifiedTopology: true,
       }
     );
+
     console.log("connected to database");
   } catch (error) {
     console.error("Error connecting to the database", error);
