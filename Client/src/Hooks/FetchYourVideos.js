@@ -11,7 +11,7 @@ const useFetchYourvideo = () => {
     const getYourvideo = async () => {
       try {
         const res = await fetch(
-          `hhttps://mernclone-6an5.onrender.com/Youtube/yourvideo/${User._id}`,
+          `https://mernclone-6an5.onrender.com/Youtube/yourvideo/${User._id}`,
           {
             method: "GET",
             headers: {
