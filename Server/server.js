@@ -46,7 +46,7 @@ app.use("/Youtube", OptionRoute);
 app.use("/Youtube", playlistRoute);
 app.use("/Youtube", CmtRoute);
 app.use("/", UserRoutes);
-app.use("/", getlocRouter);
+app.use("/", getlocRouter); 
 
 const connect = async () => {
   try {
