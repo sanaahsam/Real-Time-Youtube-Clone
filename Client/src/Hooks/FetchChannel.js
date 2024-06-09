@@ -11,7 +11,7 @@ const useFetchChannel = () => {
     const getChannel = async () => {
       try {
         const res = await fetch(
-          `https://mernclone-sana-ahsams-projects.vercel.app/${User._id}`,
+          `hhttps://mernclone-6an5.onrender.com/${User._id}`,
           {
             method: "GET",
             headers: {

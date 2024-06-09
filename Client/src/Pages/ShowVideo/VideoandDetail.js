@@ -12,7 +12,7 @@ import useFetchOneVideo from "../../Hooks/FetchOneVideo";
 import { UserContext } from "../../context/UserContext";
 import { VideoPlayer } from "../../Components/VideoPlayer";
 
-const socket = io("https://mernclone-sana-ahsams-projects.vercel.app");
+const socket = io("https://mernclone-6an5.onrender.com");
 
 function VideoandDetail() {
   const [expanded, setExpanded] = useState(false);
@@ -29,7 +29,7 @@ function VideoandDetail() {
   const handleLike = async () => {
     try {
       const res = await fetch(
-        `https://mernclone-sana-ahsams-projects.vercel.app/Youtube/like/${id}`,
+        `https://mernclone-6an5.onrender.com/Youtube/like/${id}`,
         {
           method: "POST",
           headers: {
@@ -54,7 +54,7 @@ function VideoandDetail() {
   const handleDislike = async () => {
     try {
       const res = await fetch(
-        `https://mernclone-sana-ahsams-projects.vercel.app/Youtube/dislike/${id}`,
+        `https://mernclone-6an5.onrender.com/Youtube/dislike/${id}`,
         {
           method: "POST",
           headers: {
@@ -83,7 +83,7 @@ function VideoandDetail() {
   const handleSubscribe = async () => {
     try {
       const res = await fetch(
-        `https://mernclone-sana-ahsams-projects.vercel.app/Youtube/subscribe`,
+        `https://mernclone-6an5.onrender.com/Youtube/subscribe`,
         {
           method: "PUT",
           headers: {
@@ -112,7 +112,7 @@ function VideoandDetail() {
   const handleWatchLater = async () => {
     try {
       const res = await fetch(
-        `https://mernclone-sana-ahsams-projects.vercel.app/Youtube/addwatchlater/${id}`,
+        `https://mernclone-6an5.onrender.com/Youtube/addwatchlater/${id}`,
         {
           method: "PUT",
           headers: {
@@ -146,7 +146,7 @@ function VideoandDetail() {
         <div className="controls-container">
           <div className="creator">
             <img
-              src={`https://mernclone-sana-ahsams-projects.vercel.app/${fetchonevideo.uploaderPfp}`}
+              src={`https://mernclone-6an5.onrender.com/${fetchonevideo.uploaderPfp}`}
               alt="pic"
             />
             <div className="creator-info">

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { io } from "socket.io-client";
 
-const socket = io("http://localhost:5000");
+const socket = io("https://mernclone-6an5.onrender.com");
 
 const useFetchComments = (id) => {
   //loading state
@@ -12,7 +12,7 @@ const useFetchComments = (id) => {
     const getCmts = async () => {
       try {
         const res = await fetch(
-          `hhttps://mernclone-sana-ahsams-projects.vercel.app/Youtube/allvdeocmt/${id}`,
+          `hhttps://mernclone-6an5.onrender.com/Youtube/allvdeocmt/${id}`,
           {
             method: "GET",
             headers: {

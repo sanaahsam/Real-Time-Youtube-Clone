@@ -9,7 +9,7 @@ const useFetchSearchArray = () => {
     const fetchSearchArray = async () => {
       try {
         const res = await fetch(
-          "https://mernclone-sana-ahsams-projects.vercel.app/Youtube/listTitle"
+          "https://mernclone-6an5.onrender.com/Youtube/listTitle"
         );
 
         if (!res.ok) {

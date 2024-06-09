@@ -6,7 +6,7 @@ import "../Components/VideoPlayer.css";
 import { useNavigate } from "react-router-dom";
 import { io } from "socket.io-client";
 
-const socket = io("https://mernclone-sana-ahsams-projects.vercel.app");
+const socket = io("https://mernclone-6an5.onrender.com");
 
 export const VideoPlayer = (prop) => {
   const playpause = useRef(null);
@@ -136,15 +136,12 @@ export const VideoPlayer = (prop) => {
   //click top-right corner to show location and temprature on popup
 
   const showtemp = async () => {
-    const res = await fetch(
-      "https://mernclone-sana-ahsams-projects.vercel.app/getloc",
-      {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      }
-    );
+    const res = await fetch("https://mernclone-6an5.onrender.com/getloc", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
 
     const data = await res.json();
     alert(data.locationName + " " + data.temperatureCelsius);
@@ -156,7 +153,7 @@ export const VideoPlayer = (prop) => {
 
   const handlePlay = async () => {
     const res = await fetch(
-      `https://mernclone-sana-ahsams-projects.vercel.app/Youtube/view/${prop.id}`,
+      `https://mernclone-6an5.onrender.com/Youtube/view/${prop.id}`,
       {
         method: "PUT",
         headers: {
@@ -177,8 +174,8 @@ export const VideoPlayer = (prop) => {
     <div className="video-player">
       <video
         ref={playpause}
-        poster={`https://mernclone-sana-ahsams-projects.vercel.app/${prop.thumb}`}
-        src={`https://mernclone-sana-ahsams-projects.vercel.app/${prop.src}`}
+        poster={`https://mernclone-6an5.onrender.com/${prop.thumb}`}
+        src={`https://mernclone-6an5.onrender.com/${prop.src}`}
         controls
         onPlay={handlePlay}
       />

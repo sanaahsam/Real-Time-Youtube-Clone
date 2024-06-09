@@ -33,7 +33,7 @@ function UploadForm() {
     try {
       console.log(formData);
       const res = await fetch(
-        "https://mernclone-sana-ahsams-projects.vercel.app/Youtube/uploadvideo",
+        "https://mernclone-6an5.onrender.com/Youtube/uploadvideo",
         {
           method: "POST",
           body: formData,

@@ -5,7 +5,7 @@ import { UserContext } from "../../context/UserContext";
 import { useParams } from "react-router-dom";
 import { io } from "socket.io-client";
 
-const socket = io("https://mernclone-sana-ahsams-projects.vercel.app");
+const socket = io("https://mernclone-6an5.onrender.com");
 
 function CommentSection({ cmts }) {
   const [showbtn, setShowbtn] = useState(false);
@@ -30,7 +30,7 @@ function CommentSection({ cmts }) {
   const postComment = async () => {
     try {
       const res = await fetch(
-        `https://mernclone-sana-ahsams-projects.vercel.app/Youtube/cmt/${id}`,
+        `https://mernclone-6an5.onrender.com/Youtube/cmt/${id}`,
         {
           method: "POST",
           headers: {
@@ -62,7 +62,7 @@ function CommentSection({ cmts }) {
         <div className="add-cmt">
           <div className="addcmt-subcontainer">
             <img
-              src={`https://mernclone-sana-ahsams-projects.vercel.app/${User.profile}`}
+              src={`https://mernclone-6an5.onrender.com/${User.profile}`}
               alt="user-pfp"
             />
             <input

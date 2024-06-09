@@ -33,11 +33,14 @@ function CreateChannel() {
     formData.append("Picture", selectedFile);
 
     try {
-      const response = await fetch("https://mernclone-sana-ahsams-projects.vercel.app/create", {
-        method: "PUT",
+      const response = await fetch(
+        "https://mernclone-6an5.onrender.com/create",
+        {
+          method: "PUT",
 
-        body: formData,
-      });
+          body: formData,
+        }
+      );
 
       const data = await response.json();
       console.log(data);

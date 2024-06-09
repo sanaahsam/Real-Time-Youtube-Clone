@@ -46,7 +46,7 @@ function SideMenu() {
         >
           {User.ischannel ? (
             <img
-              src={`https://mernclone-sana-ahsams-projects.vercel.app/${User.profile}`}
+              src={`https://mernclone-6an5.onrender.com/${User.profile}`}
               alt="user-pfp"
               style={{ width: "35px", height: "35px", borderRadius: "50%" }}
             />

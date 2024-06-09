@@ -11,7 +11,7 @@ const useFetchLikedVideo = () => {
     const getLiked = async () => {
       try {
         const res = await fetch(
-          `https://mernclone-sana-ahsams-projects.vercel.app/Youtube/likeplaylist/${User._id}`,
+          `https://mernclone-6an5.onrender.com/Youtube/likeplaylist/${User._id}`,
           {
             method: "GET",
             headers: {

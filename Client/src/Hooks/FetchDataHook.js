@@ -10,7 +10,7 @@ const useFetchDataHook = () => {
     const getdata = async () => {
       try {
         const res = await fetch(
-          "https://mernclone-sana-ahsams-projects.vercel.app/Youtube/allvideos",
+          "https://mernclone-6an5.onrender.com/Youtube/allvideos",
           {
             method: "GET",
             headers: {
@@ -35,7 +35,7 @@ const useFetchDataHook = () => {
       getdata();
     }
 
-    const socket = io("http://localhost:5000");
+    const socket = io("https://mernclone-6an5.onrender.com");
 
     socket.on("videoCreated", (newVideo) => {
       setGetAllvideo((prevVideos) => [newVideo, ...prevVideos]);

@@ -24,16 +24,13 @@ function GoogleSignup() {
 
       // Append each property of the UserData object to the FormData object
 
-      const response = await fetch(
-        "https://mernclone-sana-ahsams-projects.vercel.app/",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
+      const response = await fetch("https://mernclone-6an5.onrender.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
       if (!response.ok) {
         throw new Error("Failed to sign in");

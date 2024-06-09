@@ -48,7 +48,7 @@ const CreateChannel = () => {
 
     try {
       const response = await fetch(
-        "https://mernclone-sana-ahsams-projects.vercel.app/create",
+        "https://mernclone-6an5.onrender.com/create",
         {
           method: "PUT",
           body: formData,

@@ -11,7 +11,7 @@ const useFetchHistory = () => {
     const getHistory = async () => {
       try {
         const res = await fetch(
-          `https://mernclone-sana-ahsams-projects.vercel.app/Youtube/history/${User._id}`,
+          `https://mernclone-6an5.onrender.com/Youtube/history/${User._id}`,
           {
             method: "GET",
             headers: {
