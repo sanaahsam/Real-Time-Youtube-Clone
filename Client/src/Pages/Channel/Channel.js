@@ -10,7 +10,7 @@ function Channel() {
     <div className="channel-container">
       <div className="channel-subcontainer">
         <img
-          src={`hhttps://mernclone-6an5.onrender.com/${Channel.profile}`}
+          src={`https://mernclone-6an5.onrender.com/${Channel.profile}`}
           alt="Channel-pfp"
         />
         <div className="channel-info">
