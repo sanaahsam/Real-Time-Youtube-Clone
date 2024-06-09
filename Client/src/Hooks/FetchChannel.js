@@ -11,7 +11,7 @@ const useFetchChannel = () => {
     const getChannel = async () => {
       try {
         const res = await fetch(
-          `https://mernclone-6an5.onrender.com/${User._id}`,
+          `https://mernclone-6an5.onrender.com/Youtube/channel/${User._id}`,
           {
             method: "GET",
             headers: {
