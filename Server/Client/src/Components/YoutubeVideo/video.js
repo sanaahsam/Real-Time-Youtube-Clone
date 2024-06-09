@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import "../YoutubeVideo/video.css";
+import "./video.css";
 import { DrawerContext } from "../../context/DrawerContext";
 import { Link } from "react-router-dom";
 import { formatDistanceToNow } from "date-fns";
