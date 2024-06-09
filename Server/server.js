@@ -46,14 +46,17 @@ app.use("/Youtube", OptionRoute);
 app.use("/Youtube", playlistRoute);
 app.use("/Youtube", CmtRoute);
 app.use("/", UserRoutes);
-app.use("/", getlocRouter); 
+app.use("/", getlocRouter);
 
 const connect = async () => {
   try {
-    await mongoose.connect(process.env.DATABASE, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+    await mongoose.connect(
+      "mongodb+srv://sanaahsamme:VSkP5PpZlvmEu1Ul@youtube.ihghw29.mongodb.net/?retryWrites=true&w=majority&appName=YouTube",
+      {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+      }
+    );
     console.log("connected to database");
   } catch (error) {
     console.error("Error connecting to the database", error);
