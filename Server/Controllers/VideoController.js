@@ -2,7 +2,7 @@ import express from "express";
 import Video from "../Models/VideoModel.js";
 import mongoose from "mongoose";
 import { Users } from "../Models/UserModels.js";
-import { io } from "../index.js";
+import { io } from "../server.js";
 
 const AllVideo = async (req, res) => {
   try {
