@@ -47,10 +47,13 @@ const CreateChannel = () => {
     formData.append("Channel", true);
 
     try {
-      const response = await fetch("http://localhost:5000/create", {
-        method: "PUT",
-        body: formData,
-      });
+      const response = await fetch(
+        "https://mernclone-sana-ahsams-projects.vercel.app/create",
+        {
+          method: "PUT",
+          body: formData,
+        }
+      );
 
       if (response.ok) {
         setHandle("");

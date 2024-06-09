@@ -33,7 +33,7 @@ function CreateChannel() {
     formData.append("Picture", selectedFile);
 
     try {
-      const response = await fetch("http://localhost:5000/create", {
+      const response = await fetch("https://mernclone-sana-ahsams-projects.vercel.app/create", {
         method: "PUT",
 
         body: formData,

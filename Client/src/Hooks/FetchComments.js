@@ -12,7 +12,7 @@ const useFetchComments = (id) => {
     const getCmts = async () => {
       try {
         const res = await fetch(
-          `http://localhost:5000/Youtube/allvdeocmt/${id}`,
+          `hhttps://mernclone-sana-ahsams-projects.vercel.app/Youtube/allvdeocmt/${id}`,
           {
             method: "GET",
             headers: {

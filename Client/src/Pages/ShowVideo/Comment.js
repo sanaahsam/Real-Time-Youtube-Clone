@@ -11,7 +11,7 @@ function Comment(prop) {
   return (
     <div className="comment-container">
       <img
-        src={`http://localhost:5000/${prop.data.userPfp}`}
+        src={`https://mernclone-sana-ahsams-projects.vercel.app/${prop.data.userPfp}`}
         alt="otheruser-pfp"
       />
       <div className="comment-subcontainer">

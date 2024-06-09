@@ -27,13 +27,16 @@ function Signin() {
     };
 
     try {
-      const response = await fetch("http://localhost:5000/signin", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(UserData),
-      });
+      const response = await fetch(
+        "https://mernclone-sana-ahsams-projects.vercel.app/signin",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(UserData),
+        }
+      );
       const data = await response.json();
       if (response.ok) {
         dispatch({ type: "LOGIN", payload: data });

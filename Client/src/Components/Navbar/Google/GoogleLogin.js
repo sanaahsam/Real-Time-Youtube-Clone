@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import "../Google/GoogleLogin.css";
 import { GoogleLogin } from "@react-oauth/google";
-import { UserContext } from "../../../context/userContext";
+import { UserContext } from "../../../context/UserContext";
 
 function GoogleSignup() {
   const { dispatch } = useContext(UserContext);
@@ -24,13 +24,16 @@ function GoogleSignup() {
 
       // Append each property of the UserData object to the FormData object
 
-      const response = await fetch("http://localhost:5000/", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://mernclone-sana-ahsams-projects.vercel.app/",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       if (!response.ok) {
         throw new Error("Failed to sign in");

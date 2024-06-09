@@ -11,7 +11,7 @@ const useFetchYourvideo = () => {
     const getYourvideo = async () => {
       try {
         const res = await fetch(
-          `http://localhost:5000/Youtube/yourvideo/${User._id}`,
+          `https://mernclone-sana-ahsams-projects.vercel.app/Youtube/yourvideo/${User._id}`,
           {
             method: "GET",
             headers: {

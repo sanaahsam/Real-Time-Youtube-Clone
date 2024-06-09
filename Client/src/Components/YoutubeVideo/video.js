@@ -14,15 +14,15 @@ function Video(prop) {
     >
       <video
         {...(thumbnail && {
-          poster: `http://localhost:5000/${prop.data.Thumbnail}`,
+          poster: `https://mernclone-sana-ahsams-projects.vercel.app/${prop.data.Thumbnail}`,
         })}
-        src={`http://localhost:5000/${prop.data.video}`}
+        src={`https://mernclone-sana-ahsams-projects.vercel.app/${prop.data.video}`}
       />
 
       <div className="video-subcontainer">
         <img
           className="pfp"
-          src={`http://localhost:5000/${prop.data.uploaderPfp}`}
+          src={`https://mernclone-sana-ahsams-projects.vercel.app/${prop.data.uploaderPfp}`}
           alt="pic"
         />
 

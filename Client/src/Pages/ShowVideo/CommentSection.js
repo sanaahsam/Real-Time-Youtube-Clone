@@ -5,7 +5,7 @@ import { UserContext } from "../../context/UserContext";
 import { useParams } from "react-router-dom";
 import { io } from "socket.io-client";
 
-const socket = io("http://localhost:5000");
+const socket = io("https://mernclone-sana-ahsams-projects.vercel.app");
 
 function CommentSection({ cmts }) {
   const [showbtn, setShowbtn] = useState(false);
@@ -29,13 +29,16 @@ function CommentSection({ cmts }) {
 
   const postComment = async () => {
     try {
-      const res = await fetch(`http://localhost:5000/Youtube/cmt/${id}`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ userID, contents }),
-      });
+      const res = await fetch(
+        `https://mernclone-sana-ahsams-projects.vercel.app/Youtube/cmt/${id}`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ userID, contents }),
+        }
+      );
       const data = await res.json();
       socket.emit("newComment", data);
 
@@ -58,7 +61,10 @@ function CommentSection({ cmts }) {
       {User && User.ischannel ? (
         <div className="add-cmt">
           <div className="addcmt-subcontainer">
-            <img src={`http://localhost:5000/${User.profile}`} alt="user-pfp" />
+            <img
+              src={`https://mernclone-sana-ahsams-projects.vercel.app/${User.profile}`}
+              alt="user-pfp"
+            />
             <input
               placeholder="Add a comment..."
               onClick={clicked}

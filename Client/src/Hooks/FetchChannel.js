@@ -11,7 +11,7 @@ const useFetchChannel = () => {
     const getChannel = async () => {
       try {
         const res = await fetch(
-          `http://localhost:5000/Youtube/channel/${User._id}`,
+          `https://mernclone-sana-ahsams-projects.vercel.app/${User._id}`,
           {
             method: "GET",
             headers: {

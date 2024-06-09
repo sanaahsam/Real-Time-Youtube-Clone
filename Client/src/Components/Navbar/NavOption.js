@@ -60,7 +60,7 @@ function NavOption() {
         >
           {User.ischannel ? (
             <img
-              src={`http://localhost:5000/${User.profile}`}
+              src={`https://mernclone-sana-ahsams-projects.vercel.app/${User.profile}`}
               alt="user-pfp"
               style={{ width: "35px", height: "35px", borderRadius: "50%" }}
             />

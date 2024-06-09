@@ -8,7 +8,9 @@ const useFetchSearchArray = () => {
   useEffect(() => {
     const fetchSearchArray = async () => {
       try {
-        const res = await fetch("http://localhost:5000/Youtube/listTitle");
+        const res = await fetch(
+          "https://mernclone-sana-ahsams-projects.vercel.app/Youtube/listTitle"
+        );
 
         if (!res.ok) {
           throw new Error("Failed to fetch search data");

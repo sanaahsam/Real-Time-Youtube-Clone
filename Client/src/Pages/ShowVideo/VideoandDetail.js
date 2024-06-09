@@ -12,7 +12,7 @@ import useFetchOneVideo from "../../Hooks/FetchOneVideo";
 import { UserContext } from "../../context/UserContext";
 import { VideoPlayer } from "../../Components/VideoPlayer";
 
-const socket = io("http://localhost:5000");
+const socket = io("https://mernclone-sana-ahsams-projects.vercel.app");
 
 function VideoandDetail() {
   const [expanded, setExpanded] = useState(false);
@@ -28,13 +28,16 @@ function VideoandDetail() {
 
   const handleLike = async () => {
     try {
-      const res = await fetch(`http://localhost:5000/Youtube/like/${id}`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ userId }),
-      });
+      const res = await fetch(
+        `https://mernclone-sana-ahsams-projects.vercel.app/Youtube/like/${id}`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ userId }),
+        }
+      );
 
       const data = await res.json();
       if (res.ok) {
@@ -50,13 +53,16 @@ function VideoandDetail() {
 
   const handleDislike = async () => {
     try {
-      const res = await fetch(`http://localhost:5000/Youtube/dislike/${id}`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ userId }),
-      });
+      const res = await fetch(
+        `https://mernclone-sana-ahsams-projects.vercel.app/Youtube/dislike/${id}`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ userId }),
+        }
+      );
 
       const data = await res.json();
       if (res.ok) {
@@ -76,13 +82,16 @@ function VideoandDetail() {
 
   const handleSubscribe = async () => {
     try {
-      const res = await fetch(`http://localhost:5000/Youtube/subscribe`, {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ userId, videoId: id }),
-      });
+      const res = await fetch(
+        `https://mernclone-sana-ahsams-projects.vercel.app/Youtube/subscribe`,
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ userId, videoId: id }),
+        }
+      );
 
       const data = await res.json();
       if (res.ok) {
@@ -103,7 +112,7 @@ function VideoandDetail() {
   const handleWatchLater = async () => {
     try {
       const res = await fetch(
-        `http://localhost:5000/Youtube/addwatchlater/${id}`,
+        `https://mernclone-sana-ahsams-projects.vercel.app/Youtube/addwatchlater/${id}`,
         {
           method: "PUT",
           headers: {
@@ -137,7 +146,7 @@ function VideoandDetail() {
         <div className="controls-container">
           <div className="creator">
             <img
-              src={`http://localhost:5000/${fetchonevideo.uploaderPfp}`}
+              src={`https://mernclone-sana-ahsams-projects.vercel.app/${fetchonevideo.uploaderPfp}`}
               alt="pic"
             />
             <div className="creator-info">

@@ -6,7 +6,7 @@ import "../Components/VideoPlayer.css";
 import { useNavigate } from "react-router-dom";
 import { io } from "socket.io-client";
 
-const socket = io("http://localhost:5000");
+const socket = io("https://mernclone-sana-ahsams-projects.vercel.app");
 
 export const VideoPlayer = (prop) => {
   const playpause = useRef(null);
@@ -136,12 +136,15 @@ export const VideoPlayer = (prop) => {
   //click top-right corner to show location and temprature on popup
 
   const showtemp = async () => {
-    const res = await fetch("http://localhost:5000/getloc", {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    const res = await fetch(
+      "https://mernclone-sana-ahsams-projects.vercel.app/getloc",
+      {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
 
     const data = await res.json();
     alert(data.locationName + " " + data.temperatureCelsius);
@@ -152,13 +155,16 @@ export const VideoPlayer = (prop) => {
   //handle play
 
   const handlePlay = async () => {
-    const res = await fetch(`http://localhost:5000/Youtube/view/${prop.id}`, {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ userId }),
-    });
+    const res = await fetch(
+      `https://mernclone-sana-ahsams-projects.vercel.app/Youtube/view/${prop.id}`,
+      {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ userId }),
+      }
+    );
     const data = await res.json();
     socket.emit("videoUpdated", data);
 
@@ -171,8 +177,8 @@ export const VideoPlayer = (prop) => {
     <div className="video-player">
       <video
         ref={playpause}
-        poster={`http://localhost:5000/${prop.thumb}`}
-        src={`http://localhost:5000/${prop.src}`}
+        poster={`https://mernclone-sana-ahsams-projects.vercel.app/${prop.thumb}`}
+        src={`https://mernclone-sana-ahsams-projects.vercel.app/${prop.src}`}
         controls
         onPlay={handlePlay}
       />

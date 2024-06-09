@@ -32,10 +32,13 @@ function UploadForm() {
 
     try {
       console.log(formData);
-      const res = await fetch("http://localhost:5000/Youtube/uploadvideo", {
-        method: "POST",
-        body: formData,
-      });
+      const res = await fetch(
+        "https://mernclone-sana-ahsams-projects.vercel.app/Youtube/uploadvideo",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
       if (res.ok) {
         setUploadBox(false);
       }

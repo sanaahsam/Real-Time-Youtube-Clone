@@ -10,7 +10,7 @@ function Channel() {
     <div className="channel-container">
       <div className="channel-subcontainer">
         <img
-          src={`http://localhost:5000/${Channel.profile}`}
+          src={`https://mernclone-sana-ahsams-projects.vercel.app/${Channel.profile}`}
           alt="Channel-pfp"
         />
         <div className="channel-info">

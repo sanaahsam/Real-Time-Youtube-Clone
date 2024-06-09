@@ -9,12 +9,15 @@ const useFetchDataHook = () => {
 
     const getdata = async () => {
       try {
-        const res = await fetch("http://localhost:5000/Youtube/allvideos", {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-          },
-        });
+        const res = await fetch(
+          "https://mernclone-sana-ahsams-projects.vercel.app/Youtube/allvideos",
+          {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        );
 
         if (!res.ok) {
           throw new Error("Failed to fetch videos");

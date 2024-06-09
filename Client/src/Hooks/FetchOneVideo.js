@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { io } from "socket.io-client";
 
-const socket = io("http://localhost:5000");
+const socket = io("https://mernclone-sana-ahsams-projects.vercel.app");
 
 function useFetchOneVideo() {
   const { id } = useParams();
@@ -15,12 +15,15 @@ function useFetchOneVideo() {
 
     const fetchOne = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/Youtube/watch/${id}`, {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-          },
-        });
+        const res = await fetch(
+          `https://mernclone-sana-ahsams-projects.vercel.app/Youtube/watch/${id}`,
+          {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        );
         const data = await res.json();
 
         if (!res.ok) {

@@ -16,7 +16,7 @@ function SearchVideo() {
       setLoading(true);
       try {
         const res = await fetch(
-          `http://localhost:5000/youtube/searchedvideo?query=${query}`,
+          `https://mernclone-sana-ahsams-projects.vercel.app/youtube/searchedvideo?query=${query}`,
           {
             method: "GET",
             headers: {
