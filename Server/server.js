@@ -22,7 +22,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: process.env.RIGIN, //yout frontend port
+    origin: "https://real-time-youtube-clone.vercel.app",
     methods: ["GET", "POST", "PUT"],
     allowedHeaders: ["Content-Type"],
     credentials: true,
@@ -31,7 +31,7 @@ const io = new Server(server, {
 
 app.use(
   cors({
-    origin: "https://real-time-youtube-clone.vercel.app", // your frontend port
+    origin: "https://real-time-youtube-clone.vercel.app",
     methods: ["GET", "POST", "PUT"],
     allowedHeaders: ["Content-Type"],
     credentials: true,
