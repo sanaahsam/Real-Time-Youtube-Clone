@@ -12,7 +12,7 @@ const useFetchComments = (id) => {
     const getCmts = async () => {
       try {
         const res = await fetch(
-          `hhttps://mernclone-6an5.onrender.com/Youtube/allvdeocmt/${id}`,
+          `https://mernclone-6an5.onrender.com/Youtube/allvdeocmt/${id}`,
           {
             method: "GET",
             headers: {
