@@ -63,4 +63,59 @@ const YourvideoPlaylist = async (req, res) => {
   }
 };
 
-export { LikedvideoPlaylist, HistoryvideoPlaylist, YourvideoPlaylist };
+const AddWatchLater = async (req, res) => {
+  const videoId = req.params.id;
+  const { userId } = req.body;
+
+  try {
+    const playlist = await Playlist.findOne({ UserID: userId });
+
+    if (playlist) {
+      if (!playlist.WatchLaterVideo.includes(videoId)) {
+        playlist.WatchLaterVideo.push(videoId);
+        await playlist.save();
+      }
+
+      res
+        .status(200)
+        .json({ message: "Video added to Watch Later list", playlist });
+    } else {
+      throw new Error("Playlist not found for the user");
+    }
+  } catch (err) {
+    res.status(400).json({ error: err.message });
+  }
+};
+
+const WatchLaterVideoPlaylist = async (req, res) => {
+  const userId = req.params.id;
+
+  try {
+    const playlist = await Playlist.findOne({ UserID: userId });
+
+    if (playlist && playlist.WatchLaterVideo.length > 0) {
+      const WatchVideo = [];
+
+      for (const videoId of playlist.WatchLaterVideo) {
+        const findvideo = await Video.findById(videoId);
+        if (findvideo) {
+          WatchVideo.push(findvideo);
+        }
+      }
+      console.log(WatchVideo);
+      res.status(200).json(WatchVideo);
+    } else {
+      throw new Error("User didn't like any video or playlist not found");
+    }
+  } catch (err) {
+    res.status(400).json({ error: err.message });
+  }
+};
+
+export {
+  LikedvideoPlaylist,
+  HistoryvideoPlaylist,
+  YourvideoPlaylist,
+  AddWatchLater,
+  WatchLaterVideoPlaylist,
+};

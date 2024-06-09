@@ -25,6 +25,7 @@ function AllRoutes() {
           <Route path="/likedVideos/:id" element={<LikedLayout />} />
           <Route path="/history/:id" element={<AllHistoryLayout />} />
           <Route path="/yourVideos/:id" element={<YourvideoLayout />} />
+          <Route path="/watchLater/:id" element={<WatchLaterLayout />} />
           <Route path="/search" element={<SearchLayout />} />
         </Route>
         <Route path="/watch/:id" element={<ShowVideo />} />

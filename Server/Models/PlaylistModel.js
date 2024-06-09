@@ -30,6 +30,13 @@ const PlaylistSchema = new mongoose.Schema({
       default: "",
     },
   ],
+  WatchLaterVideo: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "Video",
+      default: "",
+    },
+  ],
 });
 
 const Playlist = mongoose.model("Playlist", PlaylistSchema);
