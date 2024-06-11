@@ -16,11 +16,9 @@ const UserSchema = new mongoose.Schema({
   Name: {
     type: String,
     required: true,
-    unique: true,
   },
   Handle: {
     type: String,
-    unique: true,
   },
   Channel: {
     type: Boolean,
