@@ -36,13 +36,10 @@ app.get("/", (req, res) => {
 
 const connect = async () => {
   try {
-    await mongoose.connect(
-      "mongodb+srv://sanaahsamme:VSkP5PpZlvmEu1Ul@youtube.ihghw29.mongodb.net/?retryWrites=true&w=majority&appName=YouTube",
-      {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-      }
-    );
+    await mongoose.connect(process.env.MONGO_URL, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
     console.log("connected to database");
   } catch (error) {
     console.error("Error connecting to the database", error);
@@ -53,7 +50,7 @@ const connect = async () => {
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "https://real-time-youtube-clone.vercel.app",
+    origin: process.env.CLIENT_URL,
     methods: ["GET", "POST", "PUT"],
     allowedHeaders: ["Content-Type"],
     credentials: true,
@@ -68,8 +65,7 @@ io.on("connection", (socket) => {
   });
 });
 
-const PORT = 5000;
-server.listen(PORT, () => {
+server.listen(process.env.PORT, () => {
   connect();
   console.log(`Server is listening on port ${PORT}`);
 });

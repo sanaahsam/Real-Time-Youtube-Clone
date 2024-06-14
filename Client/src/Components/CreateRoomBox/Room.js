@@ -41,9 +41,8 @@ function Room() {
 
   async function meetingUI(element) {
     try {
-      const appID = 391566161;
-      const serverSecret =
-        "6f76e4623df7d7b3bf092006c72bc97bef2ff132689b34598a3555138f157ce2";
+      const appID = "Your_appID";
+      const serverSecret = "your_serverSecre";
       const kitToken = ZegoUIKitPrebuilt.generateKitTokenForTest(
         appID,
         serverSecret,
